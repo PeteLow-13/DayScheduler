@@ -75,9 +75,7 @@ function getScheduleRow(entry,index,schedule){
     row.append(save)
     return row
 }
-// function saveContent(){
 
-// }
 
 var currentDate = getTodaysDate()
 var currentDateKey = getKeyFromDate(currentDate)
