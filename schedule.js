@@ -48,6 +48,7 @@ function getScheduleRow(entry,index,schedule){
 
     var startTime = document.createElement("td")
     startTime.innerHTML= moment(entry.startTime).format("hA")
+    $(startTime).addClass("start-time")
     row.append(startTime)
 
     var content = document.createElement("td")
@@ -60,6 +61,7 @@ function getScheduleRow(entry,index,schedule){
     }
     var textBox = document.createElement("textarea")
     textBox.setAttribute("id","textarea-"+index)
+    $(textBox).addClass("text-display")
     textBox.value = entry.content
     content.append(textBox)
     row.append(content)
@@ -76,9 +78,13 @@ function getScheduleRow(entry,index,schedule){
     return row
 }
 
+var dateBanner = document.getElementById("current-date")
+    dateBanner.textContent = moment().format("dddd, MMMM Do YYYY");
+
+
 
 var currentDate = getTodaysDate()
 var currentDateKey = getKeyFromDate(currentDate)
 var savedSchedule = getSchedule(currentDate)
-renderSchedule(savedSchedule)
+ renderSchedule(savedSchedule)
 

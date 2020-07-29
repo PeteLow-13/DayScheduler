@@ -1,15 +1,51 @@
+*{
+    font-family: 'Shadows Into Light', cursive;
+}
 body{
-    background-color: turquoise;
+    box-sizing: border-box;
+    background-color: rgb(195, 201, 198);
 }
 h1{
-    color:blue;
+    color:whitesmoke;
+    font-weight: 500;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px black; 
     text-align: center;
+    background-color: teal;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    padding: 4px;
+    height: 100px;
+
 }
 .savebutton{
-    color: blue;
-    border-radius: 5px;
-    background-color: black;
-    color: limegreen;
+    border-radius: 20px;
+    background-color:teal;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
     text-align: center;
+    box-shadow: 2px 2px 10px black;
 
+}
+.past{
+    background-color:  rgb(9, 30, 216);
+}
+.future{
+    background-color: rgba(62, 164, 223, 0.959);
+}
+.present{
+    background-color: rgb(206, 218, 40);
+}
+{
+    
+    
+}
+
+.start-time{
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    background-color: teal;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
 }
