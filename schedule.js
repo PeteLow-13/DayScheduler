@@ -51,7 +51,7 @@ function getScheduleRow(entry,index,schedule){
     $(startTime).addClass("start-time")
     row.append(startTime)
 
-    var content = document.createElement("td")
+    var content = document.createElement("td",)
     if(moment().isAfter(entry.endTime)){
         $(content).addClass("past")
     } else if(moment().isBefore(entry.startTime)){
@@ -61,7 +61,6 @@ function getScheduleRow(entry,index,schedule){
     }
     var textBox = document.createElement("textarea")
     textBox.setAttribute("id","textarea-"+index)
-    $(textBox).addClass("text-display")
     textBox.value = entry.content
     content.append(textBox)
     row.append(content)
